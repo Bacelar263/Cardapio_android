@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#012b28"
+    tools:context=".Lista">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:text="Lista de Compras"
+      android:textAlignment="center"
+      android:fontFamily="@font/poppins_bold"
+      android:textSize="30sp"
+      android:textColor="#ECE016"
+      android:layout_marginTop="10sp"
+  />
+
+  <ImageButton
+      android:id="@+id/btnTela1"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginTop="25dp"
+      android:layout_toEndOf="@id/textView"
+      android:background="#012b28"
+      android:src="@drawable/baseline_logout_24" />
+
+  <EditText
+      android:id="@+id/EDTaddNomeItem"
+      android:layout_marginLeft="10dp"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView"
+      android:background="#FFFFFF"
+      android:hint="Nome do produto"
+      android:layout_marginTop="10dp"
+    />
+
+  <EditText
+      android:id="@+id/EDTaddValorItem"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView"
+      android:layout_alignBaseline="@id/EDTaddNomeItem"
+      android:layout_marginLeft="10dp"
+      android:layout_toEndOf="@id/EDTaddNomeItem"
+      android:background="#FFFFFF"
+      android:hint="Valor do produto"
+      android:inputType="number|numberDecimal" />
+
+  <ImageButton
+      android:id="@+id/btnADD"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginStart="42dp"
+      android:layout_marginTop="75dp"
+      android:layout_toEndOf="@id/EDTaddValorItem"
+      android:background="#012b28"
+      android:src="@android:drawable/ic_menu_add" />
+
+  <LinearLayout
+      android:id="@+id/checkBoxLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@+id/EDTaddNomeItem"
+      android:layout_marginTop="10dp"
+  />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="40dp"
+      android:layout_marginBottom="30dp"
+      android:background="@drawable/background_button"
+      android:drawableRight="@drawable/ic_cesta"
+      android:fontFamily="@font/poppins_bold"
+      android:padding="15dp"
+      android:layout_alignParentBottom="true"
+      android:text="Calcular total"
+      android:textColor="#04293A" />
+
+
+
+
+
+</RelativeLayout>
